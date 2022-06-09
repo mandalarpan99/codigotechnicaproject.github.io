@@ -23,6 +23,21 @@ html{
     --white-color:#ffffff;
     --white-color-2:#e7e7e7;
 }
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color-dark);
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
 header{
     width: 100%;
     height: 100vh;
@@ -170,7 +185,7 @@ nav.active-scroll{
     width: 100%;
     overflow-x: auto;
 }
-.about_heading{
+.section_heading{
     text-align: center;
     padding-bottom: 2rem;
     font-weight: 500;
@@ -242,6 +257,43 @@ nav.active-scroll{
     font-size: calc(.2rem + 1vw);
 }
 .service_box .text i{
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(1.3rem + 1vw);
     color: rgb(0, 214, 0);
+}
+
+/* ========================work_exprience============= */
+#work_exprience{
+    margin: 3rem 0;
+    /* width: 100%; */
+    height: 120vh;
+    background-image: url('../images/work_exprience_bg.png');
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#work_exprience .wave{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#work_exprience .experience_heading{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.exprience_box_contianer{
+    width: 90%;
+    height:300px;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.exprience_box_contianer .exprience_box{
+    width: calc(100% /3.5);
+    height: 100%;
+    background-color: #222222;
 }
