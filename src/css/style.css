@@ -230,7 +230,7 @@ nav.active-scroll{
 .service_box{
     width: calc(100% /3.5);
     height: calc(92vw /4);
-    box-shadow: 5px 5px 15px -8px;
+    box-shadow: 5px 5px 15px -8px rgb(185, 185, 185);
     transition:.3s;
 }
 .service_box:hover{
@@ -279,6 +279,9 @@ nav.active-scroll{
     top: 0;
     left: 0;
 }
+#work_exprience .wave img{
+    width: 100%;
+}
 #work_exprience .experience_heading{
     position: absolute;
     top: 0;
@@ -296,4 +299,42 @@ nav.active-scroll{
     width: calc(100% /3.5);
     height: 100%;
     background-color: #222222;
+}
+#contact_us .contact_us_container{
+    width: 100%;
+    height: 80vh;
+    background: url('../images/contact_container.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_us_map_and_form{
+    width: 85%;
+    height: 85%;
+    background-color: var(--primary-color);
+    display: flex;
+}
+.map{
+    height: 100%;
+    flex: 1;
+}
+.map iframe{
+    height: 100%;
+    width: 100%;
+}
+.form{
+    width: 50%;
+    flex: 1;
+    background-color: var(--primary-color);
+    position: relative;
+}
+.form::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    transform: rotate(45deg);
 }
