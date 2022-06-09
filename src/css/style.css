@@ -307,10 +307,11 @@ nav.active-scroll{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .contact_us_map_and_form{
     width: 85%;
-    height: 85%;
+    height: 85%;    
     background-color: var(--primary-color);
     display: flex;
 }
@@ -324,9 +325,13 @@ nav.active-scroll{
 }
 .form{
     width: 50%;
+    height: 100%;
     flex: 1;
     background-color: var(--primary-color);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form::before{
     content: "";
@@ -337,4 +342,26 @@ nav.active-scroll{
     height: 60px;
     background-color: var(--primary-color);
     transform: rotate(45deg);
+}
+.form .form_box{
+    width: 350px;
+    height: 400px;
+
+}
+.form_box form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.form_box form input,.form_box form textarea{
+    padding: 5px 10px;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: #c1ffd3da;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+.form_box form .submit_btn{
+    background-color: var(--white-color);
+    font-size: 1.4rem;
 }
