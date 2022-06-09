@@ -1,0 +1,16 @@
+/*  */
+.scale{
+    transform: scale(.5);
+}
+.transition{
+    transition: all .3s;
+}
+.fade{
+    opacity: 0;
+}
+.move_to_right{
+    transform: translateX(-100%);
+}
+.move_to_left{
+    transform: translateX(100%);
+}
