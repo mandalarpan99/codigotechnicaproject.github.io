@@ -23,8 +23,23 @@ html{
     --white-color:#ffffff;
     --white-color-2:#e7e7e7;
 }
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color-dark);
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
 header{
-    width: 100vi;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(60deg, var(--primary-color), var(--primary-color-dark));
     position:relative;
@@ -62,14 +77,14 @@ nav{
     color:var(--black-color-2)
 }
 nav .logo{
-    flex: 1;
+    flex: 3;
 }
 nav .logo h2{
     font-weight: 400;
     letter-spacing: 1.2px;
 }
 nav .menus{
-    flex: 2;
+    flex: 4;
     display: flex;
     justify-content: center;
 }
@@ -108,7 +123,7 @@ nav .menus{
     width: 100%;
 }
 nav .btn_nav{
-    flex: 1;
+    flex: 2;
     text-align: right;
 }
 .btn_nav button{
@@ -167,10 +182,10 @@ nav.active-scroll{
 /* about us */
 #about_us{
     padding: 3rem 1rem;
-    width: 100vi;
+    width: 100%;
     overflow-x: auto;
 }
-.about_heading{
+.section_heading{
     text-align: center;
     padding-bottom: 2rem;
     font-weight: 500;
@@ -183,7 +198,7 @@ nav.active-scroll{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin:2rem auto;
+    margin:1.5rem auto;
 }
 .about_section2 .img{
     text-align: right;
@@ -213,9 +228,14 @@ nav.active-scroll{
     justify-content: space-around;
 }
 .service_box{
-    width: 350px;
-    height: 300px;
-    box-shadow: 2px 2px 20px -10px;
+    width: calc(100% /3.5);
+    height: calc(92vw /4);
+    box-shadow: 5px 5px 15px -8px;
+    transition:.3s;
+}
+.service_box:hover{
+    border: 1px solid black;
+    transform: scale(1.1);
 }
 .service_box .img{
     width: 100%;
