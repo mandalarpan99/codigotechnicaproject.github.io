@@ -228,3 +228,7 @@ nav.active-scroll{
 .service_box .img img{
     width: 45%;
 }
+
+.service_box .text{
+    margin: 10px;
+}
