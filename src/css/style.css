@@ -299,6 +299,10 @@ nav.active-scroll{
 .exprience_box{
     box-shadow: rgba(253, 252, 252, 0.56) 0px 22px 70px 4px;
     transition: .3s;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem;
 }
 .exprience_box:hover{
     transform: scale(1.1);
@@ -307,32 +311,28 @@ nav.active-scroll{
 .exprience_box_contianer .exprience_box{
     width: calc(100% /3.5);
     height: 100%;
-    background-color: #222222;
+    background-color: var(--black-color-2);
 }
 .exprience_box .number{
-    color: #FFF500;
-    font-size: 30px;
-    padding: 20px;
-    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: calc(1.2rem + 1vw);
+    font-weight: 500;
 }
 .exprience_box .project{
     color: var(--primary-color);
-    font-size: 25px;
-    padding-left: 20px;
-    font-weight: bold;
+    font-size: calc(1rem + 1vw);
+    font-weight: 500;
 }
 .exprience_box .para{
     color: var(--white-color);
     font-size: 15px;
-    padding-left: 20px;
-    font-weight: bold;
+    font-weight: 500;
 }
 .project_img img{
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
 }
 #contact_us .contact_us_container{
     width: 100%;
