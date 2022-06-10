@@ -272,6 +272,7 @@ nav.active-scroll{
     display: flex;
     align-items: center;
     justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%, 50% 90%, 35% 100%, 0 100%);
 }
 #work_exprience .wave{
     width: 100%;
