@@ -315,11 +315,7 @@ nav.active-scroll{
 .exprience_box_contianer .exprience_box{
     width: calc(100% /3.5);
     height: 100%;
-<<<<<<< HEAD
-    background-color: #1e6363;
-=======
-    background-color: var(--black-color-2);
->>>>>>> ad381d8b139bebc28894e89f78cdad38bdf1e8ac
+    background-color: #025163;
 }
 .exprience_box .number{
     color: var(--secondary-color);
@@ -353,7 +349,7 @@ nav.active-scroll{
 }
 .contact_us_map_and_form{
     width: 85%;
-    height: 75%;    
+    height: 80%;    
     background-color: var(--primary-color);
     display: flex;
 }
@@ -423,17 +419,40 @@ footer{
     width: 90%;
     height: 80%;
     display: flex;
+    gap: 15px;
     padding: 2rem;
 }
 .footer_content .heading{
     padding: 10px 0;
+    padding-left: 10px;
     font-weight: 400;
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-align: center;
 }
 .footer_content .col{
-    flex: 1;
-    border: 2px solid white;
+    background: #025163;
+    width: calc(100%/3.5);
+    height: 300px;
+    border: 2px solid rgb(251, 255, 254);
+    transition: ease-in .3s;
 }
 
+.footer_content .col:hover{
+    transition:ease-in-out .3s;
+    transform: scale(1.05);
+}
+.footer_content .col_links{
+    color: var(--white-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+.col .col_links:hover{
+    color: var(--primary-color);
+}
 .copyright_container{
     position: absolute;
     bottom: 0;
@@ -441,4 +460,10 @@ footer{
     width: 100%;
     height: 8vh;
     background-color: var(--primary-color-dark);
+}
+.copyright_container_para{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 15px;
+    padding-top: 2px;
 }
