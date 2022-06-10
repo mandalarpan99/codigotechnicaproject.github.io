@@ -417,9 +417,7 @@ footer{
 }
 .footer_content{
     width: 90%;
-    height: 80%;
     display: flex;
-    gap: 15px;
     padding: 2rem;
 }
 .footer_content .heading{
@@ -431,16 +429,8 @@ footer{
     text-align: center;
 }
 .footer_content .col{
-    background: #025163;
     width: calc(100%/3.5);
     height: 300px;
-    border: 2px solid rgb(251, 255, 254);
-    transition: ease-in .3s;
-}
-
-.footer_content .col:hover{
-    transition:ease-in-out .3s;
-    transform: scale(1.05);
 }
 .footer_content .col_links{
     color: var(--white-color);
@@ -450,8 +440,13 @@ footer{
     justify-content: center;
     padding: 5px;
 }
-.col .col_links:hover{
-    color: var(--primary-color);
+.footer_content .col_links{
+    color: var(--black-color);
+    transition: .3s;
+}
+.footer_content .col_links:hover{
+    color: var(--white-color);
+    transform: scale(1.5);
 }
 .copyright_container{
     position: absolute;
