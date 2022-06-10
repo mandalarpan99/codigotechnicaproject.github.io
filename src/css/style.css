@@ -231,7 +231,7 @@ nav.active-scroll{
 .service_box{
     width: calc(100% /3.5);
     height: calc(92vw /4);
-    box-shadow: 5px 5px 15px -8px rgb(185, 185, 185);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     transition:.3s;
 }
 .service_box:hover{
@@ -297,6 +297,7 @@ nav.active-scroll{
     justify-content: space-between;
 }
 .exprience_box{
+    box-shadow: rgba(253, 252, 252, 0.56) 0px 22px 70px 4px;
     transition: .3s;
 }
 .exprience_box:hover{
