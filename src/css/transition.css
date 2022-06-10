@@ -13,11 +13,11 @@
     transform:translateY(200px) !important ;
 }
 .move_to_right{
-    transform: translate(400px,0) !important;
+    transform: translate(300px,0) !important;
 }
 .move_to_left{
-    transform: translate(-400px,0) !important;
+    transform: translate(-300px,0) !important;
 }
 .blur{
-    filter: blur(10px);
+    opacity: .3;
 }
