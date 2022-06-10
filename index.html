@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/transition.css">
 
+    <!-- javascript -->
+    <script src="./src/js/app.js" defer></script>
+
 </head>
 
 <body>
@@ -37,8 +40,8 @@
             </div>
         </nav>
         <div class="header_content">
-            <h1>Welcome to <span class="highlight">Codigo Tecnica</span></h1>
-            <div class="btn_container">
+            <h1 class="scale transition">Welcome to <span class="highlight">Codigo Tecnica</span></h1>
+            <div class="btn_container move_to_right transition">
                 <button class="btn btn-about-us">About Us</button>
                 <button class="btn btn-our-team">Our Team</button>
             </div>
@@ -47,13 +50,13 @@
         <img src="./src/images/header_wave.svg" alt="" class="header_wave">
     </header>
     <!-- ======================About Us============================= -->
-    <div id="about_us">
-        <h2 class="section_heading about_heading">Codigo Tecnica Corporation.LLP (CTC)</h2>
-        <div class="about_row about_section1">
-            <div class="img">
+    <div id="about_us" class="section">
+        <h2 class="section_heading about_heading fade transition_long">Codigo Tecnica Corporation.LLP (CTC)</h2>
+        <div class="about_row about_section1 content">
+            <div class="img left_side move_to_left transition">
                 <img src="./src/images/about_img_1.svg" alt="">
             </div>
-            <div class="text">
+            <div class="text right_side move_to_right transition">
                 <p>Is a Enterprises related with Computer (Category), IT And Ites, Computer Software And Data Processing
                     Company. We can help you grow as fast as possible. Our highly qualified team will be there to help
                     you at all times. We work to our full potential and meet your expectations. Your work is not just
@@ -61,35 +64,35 @@
                     universe. So don't waste your time. Get in touch with us as soon as possible. Our Specialties -</p>
             </div>
         </div><br><br><br><br>
-        <div class="about_row about_section2">
-            <div class="text">
+        <div class="about_row about_section2 content">
+            <div class="text left_side move_to_left transition">
                 <p>CTC.LLP provides a wide range of artificial intelligence services for various industries, such as :
                     Healthcare, Finance, E-commerce, Retail, Telecom & Legal. Through our experienced management team,
                     we provide AI services like, Text Annotation, Images Annotation, Speech-Audio & Video Annotation,
                     Semantic Segmentation, Labeling / Tagging, Geospatial - Annotation, Facial Recognition Etc.</p>
             </div>
-            <div class="img">
+            <div class="img right_side move_to_right transition">
                 <img src="./src/images/about_img_2.svg" alt="">
             </div>
         </div>
         <!-- ======================About Us , Services ============================= -->
 
         <div class="service_box_container">
-            <div class="box1 service_box">
+            <div class="box1 service_box blur">
                 <div class="img"><img src="./src/images/web_designing.png" alt=""></div>
                 <div class="text"> 
                     <i class="fa-solid fa-circle-check"></i>
                     <p>Developing And Designing Web sites And Software.</p>
                 </div>
             </div>
-            <div class="box2 service_box">
+            <div class="box2 service_box blur">
                 <div class="img"><img src="./src/images/portable_applications.png" alt=""></div>
                 <div class="text">
                     <i class="fa-solid fa-circle-check"></i>
                     <p>Design and development of portable applications.</p>
                 </div>
             </div>
-            <div class="box3 service_box">
+            <div class="box3 service_box blur">
                 <div class="img"><img src="./src/images/data_management.png" alt=""></div>
                 <div class="text"> 
                     <i class="fa-solid fa-circle-check"></i>
@@ -99,11 +102,12 @@
             </div>
         </div>
     </div>
-    <div id="work_exprience">
+    <!-- work exprience -->
+    <div id="work_exprience" class="section">
         <div class="wave">
             <img src="./src/images/work_exprience_wave.svg" alt="">
         </div>
-        <h2 class="section_heading experience_heading">Work Experience Of CTC</h2>
+        <h2 class="section_heading experience_heading fade transition_long">Work Experience Of CTC</h2>
         <div class="exprience_box_contianer">
             <div class="exprience_box project">
                 <div class="project_img"><img src="./src/images/project.png" alt=""></div>
@@ -132,14 +136,14 @@
         <div class="contact_us_container">
             <div class="contact_us_map_and_form">
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d226.0150896192259!2d88.1380880993879!3d24.991910850500645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fafdc92a0dcee9%3A0xa0e98d3b36175d35!2sMaya%20apartment!5e0!3m2!1sen!2sin!4v1654763684640!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d226.0150896192259!2d88.1380880993879!3d24.991910850500645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fafdc92a0dcee9%3A0xa0e98d3b36175d35!2sMaya%20apartment!5e0!3m2!1sen!2sin!4v1654763684640!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 </div>
                 <div class="form">
                     <div class="form_box">
                         <form >
                             <input type="text" placeholder="full name">
                             <input type="email" name="email" id="email" placeholder="email">
-                            <textarea name="message" id="msg" cols="30" rows="10" placeholder="type your query````"></textarea>
+                            <textarea name="message" id="msg" cols="30" rows="10" placeholder="type your query"></textarea>
                             <input class="submit_btn" type="submit" value="Submit message">
                         </form>
                     </div>

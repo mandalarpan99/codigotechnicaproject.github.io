@@ -1,16 +1,23 @@
 /*  */
 .scale{
-    transform: scale(.5);
+    transform: scale(.5) !important;
 }
 .transition{
-    transition: all .3s;
+    transition: all .5s !important;
+}
+.transition_long{
+    transition: all .7s !important;
 }
 .fade{
-    opacity: 0;
+    opacity: 0 !important;
+    transform:translateY(200px) !important ;
 }
 .move_to_right{
-    transform: translateX(-100%);
+    transform: translate(400px,0) !important;
 }
 .move_to_left{
-    transform: translateX(100%);
+    transform: translate(-400px,0) !important;
+}
+.blur{
+    filter: blur(10px);
 }

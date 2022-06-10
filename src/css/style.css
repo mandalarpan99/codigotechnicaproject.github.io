@@ -184,6 +184,7 @@ nav.active-scroll{
     padding: 3rem 1rem;
     width: 100%;
     overflow-x: auto;
+    overflow: hidden;
 }
 .section_heading{
     text-align: center;
@@ -276,7 +277,7 @@ nav.active-scroll{
     width: 100%;
     overflow: hidden;
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 0;
 }
 #work_exprience .wave img{
