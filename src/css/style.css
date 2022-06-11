@@ -201,6 +201,9 @@ nav.active-scroll{
     gap: 1rem;
     margin:1.5rem auto;
 }
+.about_section2{
+    margin-top: 5rem;
+}
 .about_section2 .img{
     text-align: right;
 }
@@ -527,6 +530,7 @@ footer img{
     color: var(--white-color);
     text-align: center;
     font-size: calc(.2rem + .8vw);
+    height: 100%;
     padding-top: 2px;
     display: flex;
     align-items: center;
