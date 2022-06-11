@@ -1,20 +1,27 @@
 // elements===============
 
+const body = document.querySelector("body");
 const header = document.querySelector("header");
+const nav = document.querySelector("nav");
+const menuBtn = document.querySelector(".menu_btn");
+const menus = document.querySelector(".menus");
 const headerHeading = document.querySelector(".header_content h1");
 const headerBtns = document.querySelector(".btn_container");
 const sections = document.querySelectorAll(".section");
 const contents = document.querySelectorAll(".content");
 const servicesContainer = document.querySelector(".service_box_container");
+const scrollTop = document.querySelector(".scroll_to_top");
+const workExprience = document.querySelector("#work_exprience");
 
-// header hading scaling
+// header heading scaling
 const ovserver = new IntersectionObserver((e)=>{
     headerHeading.classList.remove('scale')
     headerBtns.classList.remove("move_to_right")
     ovserver.disconnect();
 },{
     root:null,
-    threshold:.25
+    threshold:.25,
+
 })
 ovserver.observe(header);
 // section heading fadding aniamtion
@@ -51,6 +58,7 @@ contents.forEach(c=>{
     contentAnimation.observe(c)
 })
 
+// servicesContainer box animation
 const boxAnimation = new IntersectionObserver((e)=>{
     if (e[0].isIntersecting) {
         let boxes = e[0].target.querySelectorAll('.service_box');
@@ -66,22 +74,36 @@ const boxAnimation = new IntersectionObserver((e)=>{
 boxAnimation.observe(servicesContainer);
 
 
+// nav activation 
+const navObserver = new IntersectionObserver((e)=>{
+    if (e[0].isIntersecting) {
+        nav.classList.contains('active') && nav.classList.remove('active');
+    }else{
+        nav.classList.add('active');
+    }
+},{
+    root:null,
+    threshold:0
+})
+navObserver.observe(header);
+
 // scroll to top
+const scrollObserver = new IntersectionObserver((e)=>{
+    if(e[0].isIntersecting && e[0].intersectionRatio>.25 && e[0].boundingClientRect.top>0){
+        scrollTop.classList.add('active'); 
+    }else if(!e[0].isIntersecting && e[0].intersectionRatio<.25 && e[0].boundingClientRect.top>0){
+        scrollTop.classList.remove('active'); 
+    }
+},{
+    root:null,
+    threshold:.25
+})
+scrollObserver.observe(workExprience);
+scrollTop.addEventListener('click',()=>{
+    window.scrollTo(0,0)
+})
 
-
-mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// toggling menus
+menuBtn.addEventListener("click",()=>{
+    menus.classList.toggle('active');
+})

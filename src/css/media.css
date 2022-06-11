@@ -7,9 +7,13 @@
     }
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:950px){
     header{
         grid-template-columns: 1fr;
+    }
+    header::before{
+        background-position: bottom right;
+        background-size: 70%;
     }
     nav .logo h2{
         letter-spacing: normal;
@@ -21,6 +25,9 @@
     .header_content .btn_container{
         display: flex;
         justify-content: center;
+    }
+    .about_row .text p{
+        font-size: calc(.5rem + 1vw);
     }
     .service_box_container{
         width: 100%;
@@ -37,4 +44,48 @@
         flex: 5;
         padding: 0 5px;
     }
+
+}
+@media only screen and (max-width:660px){
+    nav .menus{
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        width: 300px;
+        transform: translateX(100%);
+        transition: .5s;
+    }
+    .menus.active{
+        transform: translateX(0);
+    }
+    .menus .links{
+        width: 100%;
+        flex-direction: column;
+        font-size: 1.2rem;
+        background-color: var(--white-color);
+        padding: 10px;
+        gap: 2rem;
+    }
+    .menus .links .link{
+        border-bottom: .1px solid rgb(206, 206, 206);
+    }
+    .join_now.pc{
+        display: none;
+    }
+    .join_now.mbl{
+        display: initial;
+        padding: 8px 12px;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--primary-color);
+        cursor: pointer;
+    }
+    .bars{
+        display: initial;
+    }
+    .bars button {
+        background-color: var(--primary-color);
+    }
+
 }
