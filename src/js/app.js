@@ -1,6 +1,7 @@
 // elements===============
 
 const header = document.querySelector("header");
+const nav = document.querySelector("nav");
 const headerHeading = document.querySelector(".header_content h1");
 const headerBtns = document.querySelector(".btn_container");
 const sections = document.querySelectorAll(".section");
@@ -64,3 +65,17 @@ const boxAnimation = new IntersectionObserver((e)=>{
     threshold:1
 }) 
 boxAnimation.observe(servicesContainer);
+
+
+// nav activation 
+const navObserver = new IntersectionObserver((e)=>{
+    if (e[0].isIntersecting) {
+        nav.classList.contains('active') && nav.classList.remove('active');
+    }else{
+        nav.classList.add('active');
+    }
+},{
+    root:null,
+    threshold:0
+})
+navObserver.observe(header);

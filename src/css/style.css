@@ -61,10 +61,13 @@ header::before{
 header .header_wave{
     width: 100%;
     position:absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
 }
 nav{
+    position: sticky;
+    top: 0;
+    left: 0;
     height: 8vh;
     width: 100%;
     background-color:var(--white-color);
@@ -74,7 +77,21 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    color:var(--black-color-2)
+    color:var(--black-color-2);
+    transition: .4s;
+}
+nav.active{
+    position: fixed;
+    border-bottom: 1.5px solid var(--primary-color-dark);
+    animation: nav_animation 1s 1 forwards;
+}
+@keyframes nav_animation {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 nav .logo{
     flex: 1;
@@ -134,7 +151,15 @@ nav .btn_nav{
     background-color: var(--secondary-color);
     cursor: pointer;
 }
-
+.bars{
+    display: none;
+}
+.join_now.mbl{
+    display: none;
+}
+.join_now.pc{
+    display: initial;
+}
 nav.active-scroll{
     position: sticky;
     top:0;
@@ -304,7 +329,7 @@ nav.active-scroll{
     justify-content: space-between;
 }
 .exprience_box{
-    box-shadow: rgba(253, 252, 252, 0.56) 0px 22px 70px 4px;
+    box-shadow:0 0 15px -10px rgb(168, 168, 168);
     transition: .3s;
     display: flex;
     flex-direction: column;
@@ -318,7 +343,9 @@ nav.active-scroll{
 .exprience_box_contianer .exprience_box{
     width: calc(100% /3.5);
     height: 100%;
-    background-color: #025163;
+    background-color: rgba(255, 255, 255, 0.144);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
 }
 .exprience_box .number{
     color: var(--secondary-color);
