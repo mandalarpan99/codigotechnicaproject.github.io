@@ -442,7 +442,6 @@ nav.active-scroll{
 .form_box form .submit_btn:hover{
     background-color: #c1ffd3da;
     cursor: pointer;
-
 }
 
 /* footer */
@@ -564,3 +563,40 @@ footer img{
     align-items: center;
     justify-content: center;
 }
+
+/*============================Scroll to Top  =================== */
+.scroll_to_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: rgba(139, 139, 139, 0.664);
+    color: white; 
+    cursor: pointer;
+    padding:10px; 
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    display: none;
+  }
+  .scroll_to_top i{
+    color: var(--primary-color);
+    animation: up_animation 1s infinite alternate;
+  }
+  @keyframes up_animation {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10);
+    }
+  }
+  .scroll_to_top.active{
+    display: initial;
+  }
+  .scroll_to_top:hover {
+    background-color: rgb(71, 71, 71);
+  }
