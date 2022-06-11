@@ -104,7 +104,6 @@ scrollTop.addEventListener('click',()=>{
 })
 
 // toggling menus
-
 menuBtn.addEventListener("click",()=>{
     menus.classList.toggle('active');
 })
