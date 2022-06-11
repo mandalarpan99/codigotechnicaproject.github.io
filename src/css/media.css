@@ -87,5 +87,70 @@
     .bars button {
         background-color: var(--primary-color);
     }
-
+    .header_content h1{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    header::before{
+        background-size: 80%;
+    }
+    .section_heading{
+        font-size: 1.3rem;
+        /* margin-bottom: 1.6rem; */
+    }
+    #about_us{
+        padding:1rem;
+    }
+    .about_row{
+        margin: .5rem auto;
+        width: 100%;
+    }
+    .about_row .img{
+        display: none;
+    }
+    .service_box_container_pc{
+        display: none;
+    }
+    .btn_container button{
+        background-color: rgb(217, 255, 0);
+        color: var(--black-color);
+        border-radius: 0px;
+        border: none;
+        box-shadow:0px 0px 10px -5px;
+    }
+    .btn_container button.btn-our-team{
+        background-color: var(--primary-color) !important;
+    }
+    .services{
+        width: 100%;
+        list-style-type: none;
+    }
+    .services .service{
+        background: linear-gradient(60deg, var(--primary-color), var(--primary-color-dark));
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 10px 0;
+        color: var(--white-color);
+        box-shadow: 0px 2px 10px -6px;
+        font-size: 14px;
+    }
+    .service_img{
+        width: 60px;
+    }
+    #work_exprience .wave{
+        display: none;
+    }
+    #work_exprience .experience_heading{
+        width: 100%;
+        background-color: var(--white-color);
+    }
+}
+@media only screen and (max-width:460px) {
+    header::before{
+        background-size: 100%;
+    }
 }

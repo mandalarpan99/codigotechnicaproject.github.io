@@ -12,6 +12,7 @@ const contents = document.querySelectorAll(".content");
 const servicesContainer = document.querySelector(".service_box_container");
 const scrollTop = document.querySelector(".scroll_to_top");
 const workExprience = document.querySelector("#work_exprience");
+const overlay = document.querySelector(".overlay");
 
 // header heading scaling
 const ovserver = new IntersectionObserver((e)=>{
@@ -106,4 +107,9 @@ scrollTop.addEventListener('click',()=>{
 // toggling menus
 menuBtn.addEventListener("click",()=>{
     menus.classList.toggle('active');
+    overlay.classList.toggle('active');
+})
+overlay.addEventListener('click',()=>{
+    menus.classList.remove('active')
+    overlay.classList.remove('active');
 })

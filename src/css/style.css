@@ -96,10 +96,13 @@ nav.active{
 nav .logo{
     flex: 1;
 }
-nav .logo h2{
+nav .logo img{
+    width: 45%;
+}
+/* nav .logo h2{
     font-weight: 400;
     letter-spacing: 1.2px;
-}
+} */
 nav .menus{
     flex: 2;
     display: flex;
@@ -256,6 +259,12 @@ nav.active-scroll{
     display: flex;
     justify-content: space-around;
     margin: auto;
+}
+.service_box_container_pc{
+    display: flex;
+}
+service_box_container_mbl{
+    display: none;
 }
 .service_box{
     width: calc(100% /3.5);
@@ -599,4 +608,17 @@ footer img{
   }
   .scroll_to_top:hover {
     background-color: rgb(71, 71, 71);
+  }
+  /* overlay */
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000094;
+    display: none;
+  }
+  .overlay.active{
+    display: initial;
   }
