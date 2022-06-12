@@ -82,7 +82,8 @@ nav{
 }
 nav.active{
     position: fixed;
-    border-bottom: 1.5px solid var(--primary-color-dark);
+    /* border-bottom: 1.5px solid var(--primary-color-dark); */
+    box-shadow: 0px 2px 15px -10px;
     animation: nav_animation 1s 1 forwards;
 }
 @keyframes nav_animation {
@@ -95,9 +96,12 @@ nav.active{
 }
 nav .logo{
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 nav .logo img{
-    width: 45%;
+    margin-left: 20px;
+    width: 60px;
 }
 /* nav .logo h2{
     font-weight: 400;
@@ -407,7 +411,6 @@ nav.active-scroll{
     background-color: var(--primary-color);
     position: relative;
     display: flex;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
@@ -420,6 +423,7 @@ nav.active-scroll{
     height: 60px;
     background-color: var(--primary-color);
     transform: rotate(45deg);
+    display: block;
 }
 .form .form_box{
     width: 60%;
