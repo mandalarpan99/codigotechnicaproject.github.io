@@ -162,6 +162,9 @@
   #work_exprience {
     overflow: hidden;
     height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 85% 93%, 15% 93%, 0 100%, 0 100%);
+    margin:1rem 0 0 0;
+
   }
   #work_exprience .wave {
     display: none;
