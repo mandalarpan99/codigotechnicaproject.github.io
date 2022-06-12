@@ -4,14 +4,16 @@ const body = document.querySelector("body");
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const menuBtn = document.querySelector(".menu_btn");
+const aboutUsHeaderBtn = document.querySelector(".btn-about-us");
 const menus = document.querySelector(".menus");
 const headerHeading = document.querySelector(".header_content h1");
 const headerBtns = document.querySelector(".btn_container");
 const sections = document.querySelectorAll(".section");
 const contents = document.querySelectorAll(".content");
-const servicesContainer = document.querySelector(".service_box_container");
+const servicesContainer = document.querySelector(".service_box_container_pc");
 const scrollTop = document.querySelector(".scroll_to_top");
 const workExprience = document.querySelector("#work_exprience");
+const aboutUs = document.querySelector("#about_us");
 const overlay = document.querySelector(".overlay");
 
 // header heading scaling
@@ -62,7 +64,9 @@ contents.forEach(c=>{
 
 // servicesContainer box animation
 const boxAnimation = new IntersectionObserver((e)=>{
+    console.log('mak');
     if (e[0].isIntersecting) {
+        console.log('mak');
         let boxes = e[0].target.querySelectorAll('.service_box');
         boxes.forEach(box=>{
             box.classList.remove('blur');
@@ -113,4 +117,7 @@ menuBtn.addEventListener("click",()=>{
 overlay.addEventListener('click',()=>{
     menus.classList.remove('active')
     overlay.classList.remove('active');
+})
+aboutUsHeaderBtn.addEventListener('click',()=>{
+    aboutUs.scrollIntoView();
 })

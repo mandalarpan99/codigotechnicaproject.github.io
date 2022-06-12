@@ -263,7 +263,7 @@ nav.active-scroll{
 .service_box_container_pc{
     display: flex;
 }
-service_box_container_mbl{
+.service_box_container_mbl{
     display: none;
 }
 .service_box{
