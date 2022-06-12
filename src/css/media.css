@@ -87,4 +87,153 @@
     .bars button {
         background-color: var(--primary-color);
     }
+    .header_content h1{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    header::before{
+        background-size: 80%;
+    }
+    .section_heading{
+        font-size: 1.3rem;
+        /* margin-bottom: 1.6rem; */
+    }
+    #about_us{
+        padding:1rem;
+        overflow: hidden;
+    }
+    .about_row{
+        margin: .5rem auto;
+        width: 100%;
+    }
+    .about_row .img{
+        display: none;
+    }
+    .service_box_container_pc{
+        display: none;
+    }
+    .experience_heading{
+        clip-path: polygon(100% 0, 85% 100%, 16% 100%, 0 0);
+    }
+    .btn_container button{
+        background-color: rgb(217, 255, 0);
+        color: var(--black-color);
+        border-radius: 0px;
+        border: none;
+        box-shadow:0px 0px 10px -5px;
+    }
+    .btn_container button.btn-our-team{
+        background-color: var(--primary-color) !important;
+    }
+    .services{
+        width: 100%;
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .services .service{
+        background: linear-gradient(60deg, var(--primary-color), var(--primary-color-dark));
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 10px 0;
+        color: var(--white-color);
+        box-shadow: 0px 2px 10px -6px;
+        font-size: 14px;
+    }
+    .service_img{
+        width: 60px;
+    }
+    #work_exprience{
+        overflow: hidden;
+        height: 100vh;
+    }
+    #work_exprience .wave{
+        display: none;
+    }
+    #work_exprience .experience_heading{
+        width: 100%;
+        background-color: var(--white-color);
+    }
+    .exprience_box_contianer{
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .exprience_box_contianer .exprience_box{
+        width:calc(100%/2.08);
+    }
+    .exprience_box_contianer{
+        height: initial;
+        width: 100%;
+        padding: 0rem;
+    }
+    .exprience_box .number{
+        font-size: .9rem;
+    }
+    .exprience_box .project{
+        font-size: .8rem;
+    }
+    .exprience_box .para{
+        font-size: .7rem;
+    }
+    #contact_us .contact_us_container{
+        height: 100vh;
+
+    }
+    .contact_us_map_and_form{
+        flex-direction: column;
+        height: auto;
+    }
+    .form{
+        width: 100%;
+    }
+    .form::before{
+        display: none;
+    }
+    .form .form_box{
+        width: 100%;
+        padding: 10px;
+    }
+    .form_box form{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .form_box form textarea{
+        grid-column: 1/-1;
+    }
+    .form_box form input, .form_box form textarea{
+        border-width: 1px;
+    }
+    .footer_content{
+        font-size: 12px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: .2rem;
+    }
+    .footer_content .address_col{
+        grid-column: 1/-1;
+    }
+    .footer_content_container ul{
+        width: initial;
+    }
+    .footer_content .col{
+        width: initial;
+        height: auto;
+        padding: 0;
+    }
+    .copyright_container_para{
+        font-size: calc(.4rem + .8vw);
+    }
+
+}
+@media only screen and (max-width:460px) {
+    header::before{
+        background-size: 100%;
+    }
 }

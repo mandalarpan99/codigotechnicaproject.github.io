@@ -12,6 +12,7 @@ const contents = document.querySelectorAll(".content");
 const servicesContainer = document.querySelector(".service_box_container");
 const scrollTop = document.querySelector(".scroll_to_top");
 const workExprience = document.querySelector("#work_exprience");
+const overlay = document.querySelector(".overlay");
 
 // header heading scaling
 const ovserver = new IntersectionObserver((e)=>{
@@ -31,12 +32,13 @@ const animateHeadings = new IntersectionObserver((e)=>{
         animateHeadings.unobserve(e[0].target);
         // animateHeadings.disconnect();
     }if (e[0].target == sections[sections.length-1]) {
+        e[0].target.querySelector('.section_heading').classList.remove('fade');
         animateHeadings.disconnect();
         // if is this a last section then disconnect observer
     }
 },{
     root:null,
-    threshold:.17
+    threshold:.15
 })
 sections.forEach((s)=>{
     animateHeadings.observe(s);
@@ -106,4 +108,9 @@ scrollTop.addEventListener('click',()=>{
 // toggling menus
 menuBtn.addEventListener("click",()=>{
     menus.classList.toggle('active');
+    overlay.classList.toggle('active');
+})
+overlay.addEventListener('click',()=>{
+    menus.classList.remove('active')
+    overlay.classList.remove('active');
 })
