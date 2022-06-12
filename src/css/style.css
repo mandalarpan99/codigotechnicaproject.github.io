@@ -164,6 +164,10 @@ nav .btn_nav{
 .join_now.pc{
     display: initial;
 }
+.join_now:hover{
+    background: #33CF93;
+    transition: .3s;
+}
 nav.active-scroll{
     position: sticky;
     top:0;
