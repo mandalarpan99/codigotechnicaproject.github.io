@@ -1,242 +1,248 @@
-@media only screen and (max-width:1000px) {
-    .section_heading {
-        font-size:1.8rem;
-    }
-    .exprience_box_contianer .exprience_box {
-        width: calc(100% / 3.1);
-    }
+@media only screen and (max-width: 1000px) {
+  .section_heading {
+    font-size: 1.8rem;
+  }
+  .exprience_box_contianer .exprience_box {
+    width: calc(100% / 3.1);
+  }
 }
 
-@media only screen and (max-width:950px){
-    header{
-        grid-template-columns: 1fr;
-    }
-    header::before{
-        background-position: bottom right;
-        background-size: 70%;
-    }
-    nav .logo h2{
-        letter-spacing: normal;
-        font-size: 1rem;
-    }
-    .links .link a{
-        padding: 3px 2px;
-    }
-    .header_content .btn_container{
-        display: flex;
-        justify-content: center;
-    }
-    .about_row .text p{
-        font-size: calc(.5rem + 1vw);
-    }
-    .service_box_container{
-        width: 100%;
-    }
-    .service_box {
-        height: calc(95vw /4);
-    }
-    .footer_content .col{
-        width: calc(100% / 2 );
-        height: 230px;
-    }
-    .footer_content .address_col{
-        width: initial;
-        flex: 5;
-        padding: 0 5px;
-    }
-
+@media only screen and (max-width: 950px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  header::before {
+    background-position: bottom right;
+    background-size: 70%;
+  }
+  nav .logo h2 {
+    letter-spacing: normal;
+    font-size: 1rem;
+  }
+  .links .link a {
+    padding: 3px 2px;
+  }
+  .header_content .btn_container {
+    display: flex;
+    justify-content: center;
+  }
+  .about_row .text p {
+    font-size: calc(0.5rem + 1vw);
+  }
+  .service_box_container {
+    width: 100%;
+  }
+  .service_box {
+    height: calc(95vw / 4);
+  }
+  .footer_content .col {
+    width: calc(100% / 2);
+    height: 230px;
+  }
+  .footer_content .address_col {
+    width: initial;
+    flex: 5;
+    padding: 0 5px;
+  }
 }
-@media only screen and (max-width:660px){
-    nav .menus{
-        position: fixed;
-        top: 8vh;
-        right: 0;
-        width: 300px;
-        transform: translateX(100%);
-        transition: .5s;
-    }
-    .menus.active{
-        transform: translateX(0);
-    }
-    .menus .links{
-        width: 100%;
-        flex-direction: column;
-        font-size: 1.2rem;
-        background-color: var(--white-color);
-        padding: 10px;
-        gap: 2rem;
-    }
-    .menus .links .link{
-        border-bottom: .1px solid rgb(206, 206, 206);
-    }
-    .join_now.pc{
-        display: none;
-    }
-    .join_now.mbl{
-        display: initial;
-        padding: 8px 12px;
-        font-size: 1rem;
-        border-radius: 8px;
-        border: none;
-        background-color: var(--primary-color);
-        cursor: pointer;
-    }
-    .bars{
-        display: initial;
-    }
-    .bars button {
-        background-color: var(--primary-color);
-    }
-    .header_content h1{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    header::before{
-        background-size: 80%;
-    }
-    .section_heading{
-        font-size: 1.3rem;
-        /* margin-bottom: 1.6rem; */
-    }
-    #about_us{
-        padding:1rem;
-        overflow: hidden;
-    }
-    .about_row{
-        margin: .5rem auto;
-        width: 100%;
-    }
-    .about_row .img{
-        display: none;
-    }
-    .service_box_container_pc{
-        display: none;
-    }
-    .experience_heading{
-        clip-path: polygon(100% 0, 85% 100%, 16% 100%, 0 0);
-    }
-    .btn_container button{
-        background-color: rgb(217, 255, 0);
-        color: var(--black-color);
-        border-radius: 0px;
-        border: none;
-        box-shadow:0px 0px 10px -5px;
-    }
-    .btn_container button.btn-our-team{
-        background-color: var(--primary-color) !important;
-    }
-    .services{
-        width: 100%;
-        list-style-type: none;
-        overflow: hidden;
-    }
-    .services .service{
-        background: linear-gradient(60deg, var(--primary-color), var(--primary-color-dark));
-        backdrop-filter: blur(10px);
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin: 10px 0;
-        color: var(--white-color);
-        box-shadow: 0px 2px 10px -6px;
-        font-size: 14px;
-    }
-    .service_box_container_mbl{
-        display: initial;
-    }
-    .service_img{
-        width: 60px;
-    }
-    #work_exprience{
-        overflow: hidden;
-        height: 100vh;
-    }
-    #work_exprience .wave{
-        display: none;
-    }
-    #work_exprience .experience_heading{
-        width: 100%;
-        background-color: var(--white-color);
-    }
-    .exprience_box_contianer{
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-    .exprience_box_contianer .exprience_box{
-        width:calc(100%/2.08);
-    }
-    .exprience_box_contianer{
-        height: initial;
-        width: 100%;
-        padding: 0rem;
-    }
-    .exprience_box .number{
-        font-size: .9rem;
-    }
-    .exprience_box .project{
-        font-size: .8rem;
-    }
-    .exprience_box .para{
-        font-size: .7rem;
-    }
-    #contact_us .contact_us_container{
-        height: 100vh;
-
-    }
-    .contact_us_map_and_form{
-        flex-direction: column;
-        height: auto;
-    }
-    .form{
-        width: 100%;
-    }
-    .form::before{
-        display: none;
-    }
-    .form .form_box{
-        width: 100%;
-        padding: 10px;
-    }
-    .form_box form{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .form_box form textarea{
-        grid-column: 1/-1;
-    }
-    .form_box form input, .form_box form textarea{
-        border-width: 1px;
-    }
-    .footer_content{
-        font-size: 12px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        padding: .2rem;
-    }
-    .footer_content .address_col{
-        grid-column: 1/-1;
-    }
-    .footer_content_container ul{
-        width: initial;
-    }
-    .footer_content .col{
-        width: initial;
-        height: auto;
-        padding: 0;
-    }
-    .copyright_container_para{
-        font-size: calc(.4rem + .8vw);
-    }
-
+@media only screen and (max-width: 660px) {
+  nav .menus {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 300px;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+  .menus.active {
+    transform: translateX(0);
+  }
+  .menus .links {
+    width: 100%;
+    flex-direction: column;
+    font-size: 1.2rem;
+    background-color: var(--white-color);
+    padding: 10px;
+    gap: 2rem;
+  }
+  .menus .links .link {
+    border-bottom: 0.1px solid rgb(206, 206, 206);
+  }
+  .join_now.pc {
+    display: none;
+  }
+  .join_now.mbl {
+    display: initial;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .bars {
+    display: initial;
+  }
+  .bars button {
+    background-color: var(--primary-color);
+  }
+  .header_content h1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  header::before {
+    background-size: 80%;
+  }
+  .section_heading {
+    font-size: 1.3rem;
+    /* margin-bottom: 1.6rem; */
+  }
+  #about_us {
+    padding: 1rem;
+    overflow: hidden;
+  }
+  .about_row {
+    margin: 0.5rem auto;
+    width: 100%;
+  }
+  .about_row .img {
+    display: none;
+  }
+  .service_box_container_pc {
+    display: none;
+  }
+  .experience_heading {
+    clip-path: polygon(100% 0, 85% 100%, 16% 100%, 0 0);
+  }
+  .btn_container button {
+    background-color: rgb(217, 255, 0);
+    color: var(--black-color);
+    border-radius: 0px;
+    border: none;
+    box-shadow: 0px 0px 10px -5px;
+  }
+  .btn_container button.btn-our-team {
+    background-color: var(--primary-color) !important;
+  }
+  .services {
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  .services .service {
+    background: linear-gradient(
+      60deg,
+      var(--primary-color),
+      var(--primary-color-dark)
+    );
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+    color: var(--white-color);
+    box-shadow: 0px 2px 10px -6px;
+    font-size: 14px;
+  }
+  .service_box_container_mbl {
+    display: initial;
+  }
+  .service_img {
+    width: 60px;
+  }
+  #work_exprience {
+    overflow: hidden;
+    height: 100vh;
+  }
+  #work_exprience .wave {
+    display: none;
+  }
+  #work_exprience .experience_heading {
+    width: 100%;
+    background-color: var(--white-color);
+  }
+  .exprience_box_contianer {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .exprience_box_contianer .exprience_box {
+    width: calc(100% / 2.08);
+  }
+  .exprience_box_contianer {
+    height: initial;
+    width: 100%;
+    padding: 0rem;
+  }
+  .exprience_box .number {
+    font-size: 0.9rem;
+  }
+  .exprience_box .project {
+    font-size: 0.8rem;
+  }
+  .exprience_box .para {
+    font-size: 0.7rem;
+  }
+  #contact_us .contact_us_container {
+    height: 100vh;
+  }
+  .contact_us_map_and_form {
+    flex-direction: column;
+    height: auto;
+  }
+  .form {
+    width: 100%;
+  }
+  .form::before {
+    display: none;
+  }
+  .form .form_box {
+    width: 100%;
+    padding: 10px;
+  }
+  .form_box form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form_box form textarea {
+    grid-column: 1/-1;
+  }
+  .form_box form input,
+  .form_box form textarea {
+    border-width: 1px;
+  }
+  .footer_content {
+    font-size: 12px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0.2rem;
+  }
+  .footer_content .address_col {
+    grid-column: 1/-1;
+  }
+  .footer_content_container ul {
+    width: initial;
+  }
+  .footer_content .col {
+    width: initial;
+    height: auto;
+    padding: 0;
+  }
+  .copyright_container_para {
+    font-size: calc(0.4rem + 0.8vw);
+  }
+  .importent_notice {
+    margin: 2rem auto;
+    text-align: center;
+  }
 }
-@media only screen and (max-width:460px) {
-    header::before{
-        background-size: 100%;
-    }
+@media only screen and (max-width: 460px) {
+  header::before {
+    background-size: 100%;
+  }
 }
