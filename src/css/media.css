@@ -101,6 +101,7 @@
     }
     #about_us{
         padding:1rem;
+        overflow: hidden;
     }
     .about_row{
         margin: .5rem auto;
@@ -111,6 +112,9 @@
     }
     .service_box_container_pc{
         display: none;
+    }
+    .experience_heading{
+        clip-path: polygon(100% 0, 85% 100%, 16% 100%, 0 0);
     }
     .btn_container button{
         background-color: rgb(217, 255, 0);
@@ -125,6 +129,7 @@
     .services{
         width: 100%;
         list-style-type: none;
+        overflow: hidden;
     }
     .services .service{
         background: linear-gradient(60deg, var(--primary-color), var(--primary-color-dark));
@@ -140,6 +145,9 @@
     }
     .service_img{
         width: 60px;
+    }
+    #work_exprience{
+        overflow: hidden;
     }
     #work_exprience .wave{
         display: none;
