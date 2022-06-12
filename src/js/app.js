@@ -32,12 +32,13 @@ const animateHeadings = new IntersectionObserver((e)=>{
         animateHeadings.unobserve(e[0].target);
         // animateHeadings.disconnect();
     }if (e[0].target == sections[sections.length-1]) {
+        e[0].target.querySelector('.section_heading').classList.remove('fade');
         animateHeadings.disconnect();
         // if is this a last section then disconnect observer
     }
 },{
     root:null,
-    threshold:.17
+    threshold:.15
 })
 sections.forEach((s)=>{
     animateHeadings.observe(s);
