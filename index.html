@@ -24,7 +24,7 @@
 
 <body>
     <!-- ====================Header===================== -->
-    <header>
+    <header class="section" data-id="1">
         <div class="overlay"></div>
         <nav>
             <div class="logo">
@@ -33,10 +33,10 @@
             </div>
             <div class="menus">
                 <ul class="links">
-                    <li class="link"><a href="#" class="active">Home</a></li>
-                    <li class="link"><a href="#about_us">About</a></li>
-                    <li class="link"><a href="#">Chefts</a></li>
-                    <li class="link"><a href="#contact_us">Contact</a></li>
+                    <li class="link"><a href="#" class="nav_link active" data-id="1">Home</a></li>
+                    <li class="link"><a href="#about_us" class="nav_link" data-id="2">About</a></li>
+                    <li class="link"><a href="#work_exprience" class="nav_link" data-id="3">Chefts</a></li>
+                    <li class="link"><a href="#contact_us" class="nav_link" data-id="4">Contact</a></li>
                     <button class="join_now mbl">Join Now</button>
                 </ul>
             </div>
@@ -58,7 +58,7 @@
         <img src="./src/images/header_wave.svg" alt="" class="header_wave">
     </header>
     <!-- ======================About Us============================= -->
-    <div id="about_us" class="section">
+    <div id="about_us" class="section" data-id="2">
         <h2 class="section_heading about_heading fade transition_long">Codigo Tecnica Corporation.LLP (CTC)</h2>
         <div class="about_row about_section1 content">
             <div class="img left_side move_to_left transition">
@@ -127,7 +127,7 @@
         </div>
     </div>
     <!-- work exprience -->
-    <div id="work_exprience" class="section">
+    <div id="work_exprience" class="section" data-id="3" >
         <div class="wave">
             <img src="./src/images/work_exprience_wave.svg" alt="">
         </div>
@@ -155,7 +155,7 @@
         </div>
     </div>
 
-    <div id="contact_us">
+    <div id="contact_us" class="section" data-id="4">
         <h2 class="section_heading contact_heading">Contact Us</h2>
         <div class="contact_us_container">
             <div class="contact_us_map_and_form">
