@@ -259,7 +259,9 @@ nav.active-scroll{
     font-weight: 300;
     color: var(--black-color-2);
 }
-
+.about_row p.about_para_heading{
+    color: var(--primary-color);
+}
 
 /* ======================About Us , Services ============================= */
 
