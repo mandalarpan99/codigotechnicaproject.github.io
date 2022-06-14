@@ -155,7 +155,7 @@ navLinksContainer.addEventListener("click", (e) => {
       link.classList.remove("active");
     }
   });
-  e.target.closest(".nav_link").classList.add("active");
+  e.target?.closest(".nav_link").classList.add("active");
 });
 
 // link active on scrolling

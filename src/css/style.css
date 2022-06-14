@@ -166,19 +166,21 @@ nav .btn_nav{
 .join_now.mbl{
     display: none;
     text-decoration: none;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 10px;
     padding: 5px;
+    color: var(--black-color);
 }
 .join_now.pc{
     display: initial;
     text-decoration: none;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 10px;
     padding: 5px;
+    color: var(--black-color);
 }
 .join_now:hover{
-    background: var(--gray-color);
+    background: var(--primary-color);
     color: var(--white-color);
     transition: .3s;
 }
