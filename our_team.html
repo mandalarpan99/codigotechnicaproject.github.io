@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo Tecnica</title>
+    <link rel="shortcut icon" href="./src/images/LOGO.png" type="image/x-icon">
+    <!-- fontawasome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- css files -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/transition.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./src/css/media.css">
+    <!-- javascript -->
+     
+ <script src="./src/js/app.js" defer></script>
+<!--     <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
+
+  
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*h3 heading*/
+.a{
+      width: 100%;
+      height: auto;
+      background: #33CF93;
+      color: black;
+      padding: 1%;
+      font-family: Arial;
+      /*font-size: 20px;
+      text-decoration:2px double underline;
+*/
+
+   }
+ 
+/*section start*/
+.a1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #33CF93;
+   /* min-height: 100vh;*/
+}
+
+/*section design with circle*/
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #025163;
+    clip-path: circle(35% at right 70%);
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#025163;
+    clip-path: circle(12% at 5% 6%);
+}
+/*content under container*/
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+/*img*/
+.container .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.container .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+   /* letter-spacing: 2px;*/
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.container .card .sci p{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .card:hover .sci p {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .sci p  {
+    color: #fff;
+   
+    font-size: 12px;
+}
+
+</style>
+</head>
+<body>
+    <!-- ====================Header===================== -->
+  
+
+        <nav> 
+            <div class="logo">
+                <!-- <h2>CODIGO TECNICA</h2> -->
+                <img src="./src/images/logo4.png" alt="logo" class="logo_img">
+            </div>
+            <div class="menus">
+                <ul class="links">
+                    <!-- <li class="link"><a href="#" class="nav_link active" data-id="1">Home</a></li>
+                    <li class="link"><a href="#about_us" class="nav_link" data-id="2">About</a></li>
+                    <li class="link"><a href="#work_exprience" class="nav_link" data-id="3">Chefts</a></li>
+                    <li class="link"><a href="#contact_us" class="nav_link" data-id="4">Contact</a></li> -->
+                    <!-- <button class="join_now mbl">Join Now</button> -->
+                    <a href="index.html"><button class="join_now mbl">Home</button></a>
+                </ul>
+            </div>
+          <div class="btn_nav">
+                <!-- <button class="join_now pc">Join Now</button>  -->
+                <a href="index.html" style="text-decoration: none;"><button class="join_now pc">Home</button></a>
+                <div class="bars">
+                    <!-- <button class="menu_btn"><img width="16" src="./src/images/menu.png" alt=""></button> -->
+                    <a href="index.html"><button style="font-size:18px;border-radius: 12px;"><i class="fa fa-home"></i></button></a>
+                </div>
+            </div>
+        </nav>
+
+ <center><h3 class="a section_heading experience_heading">Let's Meet With Us</h3>  </center>
+      <div class="a1">
+    
+   <section>
+        <div class="container">
+
+
+            <div class="card">
+
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="./src/images/vector1.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Mr. Arpan Mandal<br><span>Web App Designer & Developer</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                   <p>A full-stack developer. Very skillfull person, with 4 years experience of this field.</p>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="./src/images/vector2.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Mr. Minarul Hoque<br><span>Web App Designer & Developer</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                  <p>A highly skilled developer. I spend a lots of time, practically every day, experimenting with HTML, CSS, and JavaScript. And I created awesome UI/UX design for the company.</p>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="./src/images/vector3.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Mr. Pritesh Kumar<br><span>Web App Designer & Developer</span></h3>
+                    </div>
+                </div>
+                <div class="sci">
+                   <p>A highly skilled developer. I spend a lots of time, practically every day, experimenting with HTML, CSS, and JavaScript. And I created awesome UI/UX design for the company.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <footer>
+        <div class="footer_content">
+            <div class="col address_col">
+                <h3 class="heading">Find Us</h3>
+                <div class="address_container footer_content_container">
+                    <address>
+                        Park Street, Eliot Road <br>
+                        Park Street Area <br>
+                        Pin: 700017 <br>
+                        <!-- Phone: +91 0000 000 000 <br> -->
+                        Email: info@codigotecnica.co.in</address>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="heading">Quick links</h4>
+                    <div class="quick_links_container footer_content_container">
+                        <ul>
+                            <li><a href="#" class="col_links">Home</a><br></li>
+                            <li> <a href="#about_us" class="col_links">About</a><br></li>
+                            <li><a href="#" class="col_links">Chefts</a><br></li>
+                            <li><a href="#contact_us" class="col_links">Contact</a><br></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="col">
+                <h3 class="heading">Follow us</h3>
+                <div class="follow_us_container footer_content_container">
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-facebook"></i>
+                            <a class="col_links" href="https://www.facebook.com/Codigo-Tecnica-Corporation-LLP-109539685098863" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-instagram"></i>
+                            <a class="col_links" href="https://www.instagram.com/codigo.tecnica/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-twitter-square"></i>
+                            <a class="col_links" href="#" target="_blank">Twitter</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a class="col_links" href="https://www.linkedin.com/in/codigo-tecnica-corporation-llp-703180240/" target="_blank">Linkden</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img src="./src/images/footer_svg.svg" alt="">
+        </div>
+        <div class="importent_notice">
+            <h3>We are hiring Send your resume in our email- <a href="mailto:hr@codigotecnica.co.in">hr@codigotecnica.co.in</a></h3>
+        </div>
+        <div class="copyright_container">
+            <p class="copyright_container_para">© Copyright Codigo Tecnica Corporation. LLP. All Rights Reserved <br>
+                Designed by Codigo Tecnica Corporation. LLP</p>
+        </div>
+    </footer>
+  <button class="scroll_to_top"><i class="fa-solid fa-angle-up"></i></button>
+</body>
+</html>
