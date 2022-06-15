@@ -163,12 +163,10 @@ navLinksContainer.addEventListener("click", (e) => {
 const activatMenu = new IntersectionObserver((e)=>{
     if (e[0].isIntersecting) {
         navLinks.forEach((link)=>{
-            console.log(link)
             link.classList.remove('active');
         })
         let link = navLinksContainer.querySelector(`li a[data-id='${e[0].target.dataset.id}']`);
         link.classList.add('active');
-        // console.log(link);
     }
 },{
     root:null,
