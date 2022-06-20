@@ -485,8 +485,11 @@ nav.active-scroll{
     justify-content: center;
     align-items: center;
 }
-.brand img{
+.brand a{
     width: 70%;
+}
+.brand a img{
+    width: 100%;
     border-radius: 10px;
 }
 
